@@ -1,0 +1,41 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:purple;
+    color: white;
+    padding-left: 10px;
+  }
+  .answerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+    margin-bottom:5px;
+  }
+  .NextButton {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 20px;
+    background: violet;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .buttonClicked {
+    background:violet;
+  }
+  .original {
+    background: white;
+  }
+  
+
