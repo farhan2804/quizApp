@@ -17,23 +17,23 @@
 #ans1 {
   background: violet;
   width: 180px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 #ans2 {
   background: violet;
   width: 180px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 #ans3 {
   background: violet;
   width: 180px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 #ans4 {
   background: violet;
   width: 180px;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .detailButton {
   margin-top: 10px;
@@ -42,7 +42,15 @@
 .ansHeading {
   margin-bottom: 20px;
 }
-.ansCorrect{
-    margin-top:20px;
-    margin-bottom:20px;
+.ansCorrect {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.NextButton {
+  color: black;
+  background: white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
 }

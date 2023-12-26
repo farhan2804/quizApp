@@ -17,7 +17,7 @@ import EightQuestion from "../8/EigthQuestion";
 import NinthQuestion from "../9/NinthQuestion";
 import TenthQues from "../10/TenthQues";
 import LastPage from "../LastPage/LastPage";
-import { QuestionsContext } from "../../context/questionsContext";
+import { QuestionsContext } from "../../context/scoreContext";
 
 const FrontPage = () => {
   const [name, setName] = useState("");

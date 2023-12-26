@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { Questions } from "../../Questions";
 import { useState, useContext } from "react";
-import { QuestionsContext } from "../../context/questionsContext";
+import { useQuestions } from "../../context/questionsContext";
+import { QuestionsContext } from "../../context/scoreContext";
 import "./SixthQuestion.css";
+
 const FirstQuestion = () => {
+  const questionsData = useQuestions();
   const [selectedOption, setSelectedOption] = useState(null);
   const [buttonClass1, setButtonClass1] = useState("original");
   const [buttonClass2, setButtonClass2] = useState("original");
@@ -40,40 +42,45 @@ const FirstQuestion = () => {
     setButtonClass4("buttonClicked");
   };
   const changeScore = () => {
-    if (selectedOption !== null) {
-      if (selectedOption === Questions[5].ans) {
+    if (selectedOption !== null && questionsData.length > 0) {
+      if (selectedOption === questionsData[5].ans) {
         setCount(count + 1);
       }
     }
   };
+
   return (
     <>
       <div className="mainContainer">
-        <h1>{Questions[5].ques}</h1>
+        {questionsData.length > 0 ? (
+          <h1>{questionsData[5].ques}</h1>
+        ) : (
+          <p>Loading...</p>
+        )}
         <div className="answerContainer">
           <button
             className={buttonClass1}
             onClick={() => captureValue1("optionA")}
           >
-            {Questions[5].optionA}
+            {questionsData.length > 0 && questionsData[5].optionA}
           </button>
           <button
             className={buttonClass2}
             onClick={() => captureValue2("optionB")}
           >
-            {Questions[5].optionB}
+            {questionsData.length > 0 && questionsData[5].optionB}
           </button>
           <button
             className={buttonClass3}
             onClick={() => captureValue3("optionC")}
           >
-            {Questions[5].optionC}
+            {questionsData.length > 0 && questionsData[5].optionC}
           </button>
           <button
             className={buttonClass4}
             onClick={() => captureValue4("optionD")}
           >
-            {Questions[5].optionD}
+            {questionsData.length > 0 && questionsData[5].optionD}
           </button>
           <NavLink className="NextButton" to="/seventh" onClick={changeScore}>
             Next Question
@@ -83,4 +90,5 @@ const FirstQuestion = () => {
     </>
   );
 };
+
 export default FirstQuestion;
