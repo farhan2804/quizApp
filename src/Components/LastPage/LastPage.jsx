@@ -43,7 +43,7 @@ const LastPage = () => {
             </div>
           ))}
 
-          <NavLink className="NextButton" to="/" onClick={restartQuiz}>
+          <NavLink className="restartButton" to="/" onClick={restartQuiz}>
             Retake Quiz
           </NavLink>
         </div>
