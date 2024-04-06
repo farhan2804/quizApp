@@ -15,22 +15,22 @@
   padding: 20px;
 }
 #ans1 {
-  background: violet;
+  background: #1c217a;
   width: 180px;
   margin-top: 20px;
 }
 #ans2 {
-  background: violet;
+  background: #1c217a;
   width: 180px;
   margin-top: 20px;
 }
 #ans3 {
-  background: violet;
+  background: #1c217a;
   width: 180px;
   margin-top: 20px;
 }
 #ans4 {
-  background: violet;
+  background: #1c217a;
   width: 180px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -48,7 +48,7 @@
 }
 .restartButton {
   color: rgb(248, 237, 237);
-  background: rgb(7, 0, 0);
+  background: #1c217a;
   width: 150px;
   height: 35px;
   text-align: center;

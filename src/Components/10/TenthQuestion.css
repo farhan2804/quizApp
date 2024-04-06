@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:purple;
+    background:#0a0d41;
     color: white;
     padding-left: 10px;
   }
@@ -27,12 +27,13 @@
     color: white;
     width: 100px;
     height: 20px;
-    background: violet;
+    background: #494eae;
     text-align: center;
     border-radius: 5px;
   }
   .buttonClicked {
-    background:violet;
+    background:#494eae;
+    color:white;
   }
   .original {
     background: white;
